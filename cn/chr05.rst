@@ -143,7 +143,7 @@
 
     from Bio import SeqIO
     record_iterator = SeqIO.parse("ls_orchid.gbk", "genbank")
-    first_record = next(record_iterator.next())
+    first_record = next(record_iterator)
     print(first_record)
 
 输出结果:
